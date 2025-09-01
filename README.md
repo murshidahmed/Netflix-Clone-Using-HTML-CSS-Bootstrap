@@ -1,1 +1,1 @@
-# Netflix-Clone-Using-HTML-CSS-Bootstrap
+Netflix clone using HTML, CSS & Bootstrap.
