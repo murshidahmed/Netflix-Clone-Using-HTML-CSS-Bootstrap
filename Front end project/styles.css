@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    background-image: url("./images/bgimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: static;
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent 40%, transparent 60%, rgba(0, 0, 0, 1));
+}
+
+.overlay2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top-logo img{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    cursor: pointer;
+}
+
+.search-btn .btn{
+    width: 100px;
+    height: 40px;
+    background-color: #E50914;
+    color: white;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+    top: 30px;
+    transition: 0.1s ease;
+    border: 0;
+}
+
+.search-btn .btn:hover{
+    background-color: #bb131c;
+    color: white;
+}
+
+.hero-section{
+    text-align: center;
+    position: absolute;
+    color: white;
+    z-index: 3;
+    height: 95vh;
+    width: 100%;
+    top: 35%;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 60px; 
+}
+
+.sub-title{
+    font-weight: 700;
+}
+
+.text{
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.email-input input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #757575;
+    background-color: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 3.5px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.email-input .get-start{
+    border: 0;
+    height: 40px;
+    width: 150px;
+    background-color: #E50914;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 500;
+    transition: 0.1s ease;
+}
+
+.email-input .get-start:hover{
+    background-color: #bb131c;
+    color: white;
+}
+
+/* .down-line{
+    border: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent 90%, rgba(0, 0, 0, 1));
+
+}
+
+.down-line img{
+    width: 100%;
+    position: relative;
+} */
+
+.col-md-4 img{
+    width: 500px;
+}
+
