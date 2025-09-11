@@ -9,8 +9,101 @@
     <link rel="icon" href="D:\Marstech Full Stack Dev\Frontend Website\Front end project\images\icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+    <style>
+        
+        /* FAQ Section */
+        .faq {
+            background: #000;
+            padding: 80px 0;
+            border-top: 8px solid #222;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 50px;
+        }
+
+        .accordion {
+            max-width: 815px;
+            margin: 0 auto 50px;
+        }
+
+        .accordion-item {
+            background: #2d2d2d;
+            border: none;
+            margin-bottom: 8px;
+        }
+
+        .accordion-button {
+            background: #2d2d2d;
+            color: #fff;
+            border: none;
+            padding: 24px;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #2d2d2d;
+            color: #fff;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-body {
+            background: #2d2d2d;
+            color: #fff;
+            padding: 24px;
+            font-size: 1.5rem;
+        }
+
+
+        
+              /* Footer */
+
+        
+        .footer {
+            background: #000;
+            padding: 80px 0 40px;
+            border-top: 8px solid #222;
+        }
+
+        .footer p {
+            color: #737373;
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .footer-links a {
+            color: #737373;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        
+
+    </style>
     </head>
 <body>
 
@@ -40,21 +133,189 @@
         
     </div>
 
-    
-    <!-- <div class="down-line">
-        <img src="D:\Marstech Full Stack Dev\Frontend Website\Front end project\images\downLine.jpg" alt="">
-    </div> -->
+    <section class="features">
+        <div class="container">
+            <!-- Feature 1 -->
+            <div class="row feature-row align-items-center">
+                <div class="col-lg-6 feature-text">
+                    <h2>Enjoy on your TV</h2>
+                    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                </div>
+                <div class="col-lg-6 feature-image">
+                    <div class="device-mockup">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                </div>
+            </div>
 
-    <div class="second">
-        
-        <div>
-            <h2>tren</h2>
+            <!-- Feature 2 -->
+            <div class="row feature-row align-items-center">
+                <div class="col-lg-6 feature-image order-lg-1">
+                    <div class="device-mockup">
+                        <i class="fas fa-download"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6 feature-text order-lg-2">
+                    <h2>Download your shows to watch offline</h2>
+                    <p>Save your favorites easily and always have something to watch.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="row feature-row align-items-center">
+                <div class="col-lg-6 feature-text">
+                    <h2>Watch everywhere</h2>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+                <div class="col-lg-6 feature-image">
+                    <div class="device-mockup">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="row feature-row align-items-center">
+                <div class="col-lg-6 feature-image order-lg-1">
+                    <div class="device-mockup">
+                        <i class="fas fa-child"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6 feature-text order-lg-2">
+                    <h2>Create profiles for kids</h2>
+                    <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What is Netflix?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies and documentaries on thousands of internet-connected devices.
+                        </div>
+                    </div>
+                </div>
 
-        
-    </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How much does Netflix cost?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Where can I watch?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web or on any device.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            How do I cancel?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            What can I watch on Netflix?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning originals, and more.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            Is Netflix good for kids?
+                        </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Questions? Call 1-844-505-2993</p>
+            
+            <div class="footer-links">
+                <div>
+                    <a href="#">FAQ</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Speed Test</a>
+                </div>
+                <div>
+                    <a href="#">Help Center</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Cookie Preferences</a>
+                    <a href="#">Legal Notices</a>
+                </div>
+                <div>
+                    <a href="#">Account</a>
+                    <a href="#">Ways to Watch</a>
+                    <a href="#">Corporate Information</a>
+                    <a href="#">Only on Netflix</a>
+                </div>
+                <div>
+                    <a href="#">Media Center</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+            <select class="language-select mb-4">
+                <option>English</option>
+                <option>Español</option>
+            </select>
+
+            <p>Netflix United States</p>
+        </div>
+    </footer>
+
 
     
     
